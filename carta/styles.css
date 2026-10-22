@@ -1,41 +1,114 @@
-body {
-    background: linear-gradient(135deg, #ffd6e7, #fff0f5);
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.carta {
-    background-color: white;
-    max-width: 500px;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px #d98ba5;
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f5, #fce4ec);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.contenedor {
+    background-color: #fffafa;
+    max-width: 750px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #f3b6cc;
+    box-shadow: 0 10px 30px rgba(190, 80, 120, 0.2);
     text-align: center;
-    color: #5c3444;
-}
-
-h1 {
-    color: #e75480;
-    font-size: 30px;
-}
-
-p {
-    font-size: 17px;
-    line-height: 1.8;
 }
 
 .corazon {
-    font-size: 45px;
+    font-size: 55px;
+    margin-bottom: 15px;
+    animation: latido 1.5s infinite;
+}
+
+h1 {
+    color: #c2185b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ad5275;
+    font-size: 19px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+p {
+    color: #5e3b4b;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.versiculo {
+    background-color: #fff0f5;
+    color: #ad1457;
+    text-align: center;
+    padding: 20px;
+    border-left: 4px solid #e91e63;
+    border-radius: 12px;
+    font-style: italic;
+}
+
+.despedida {
+    text-align: center;
+    color: #c2185b;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .firma {
-    color: #e75480;
+    color: #ad1457;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 20px;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+.final {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f3b6cc;
+    color: #c2185b;
+    font-size: 18px;
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
