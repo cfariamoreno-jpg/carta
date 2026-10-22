@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carta {
+    background-color: white;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #d98ba5;
+    text-align: center;
+    color: #5c3444;
+}
+
+h1 {
+    color: #e75480;
+    font-size: 30px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.corazon {
+    font-size: 45px;
+}
+
+.firma {
+    color: #e75480;
+    font-weight: bold;
+    font-size: 20px;
+}
